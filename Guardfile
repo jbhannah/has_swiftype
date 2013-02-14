@@ -19,8 +19,7 @@ guard 'rspec', :cli => "--color --drb" do
   # Rails example
   watch(%r{^spec/dummy/app/(.+)\.rb$})                           { |m| "spec/#{m[1]}_spec.rb" }
   watch(%r{^spec/dummy/app/controllers/(.+)_(controller)\.rb$})  { |m| "spec/#{m[2]}s/#{m[1]}_#{m[2]}_spec.rb" }
-  watch(%r{^spec/support/(.+)\.rb$})                  { "spec" }
-  watch('config/routes.rb')                           { "spec/routing" }
+  watch(%r{^spec/support/(.+)\.rb$})                             { "spec" }
+  watch('spec/dummy/config/routes.rb')                           { "spec/routing" }
   watch('spec/dummy/app/controllers/application_controller.rb')  { "spec/controllers" }
 end
-
