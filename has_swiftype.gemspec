@@ -29,4 +29,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rb-fsevent"
   s.add_development_dependency "rb-fchange"
   s.add_development_dependency "ruby_gntp"
+  s.add_development_dependenty "coveralls"
 end

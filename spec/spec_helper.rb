@@ -14,6 +14,9 @@ Spork.prefork do
   require 'rspec/autorun'
   require 'capybara/rspec'
 
+  require 'coveralls'
+  Coveralls.wear!
+
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
   RSpec.configure do |config|
