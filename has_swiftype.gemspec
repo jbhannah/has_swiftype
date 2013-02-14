@@ -7,10 +7,11 @@ require "has_swiftype/version"
 Gem::Specification.new do |s|
   s.name        = "has_swiftype"
   s.version     = HasSwiftype::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of HasSwiftype."
+  s.authors     = ["Jesse B. Hannah"]
+  s.email       = ["jesse@jbhannah.net"]
+  s.homepage    = "https://github.com/jbhannah/has_swiftype"
+  s.license     = "MIT"
+  s.summary     = "Add Swiftype indexing to models in a Ruby on Rails application with a single method."
   s.description = "TODO: Description of HasSwiftype."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
