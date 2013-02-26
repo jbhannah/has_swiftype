@@ -8,14 +8,14 @@ Spork.prefork do
   # if you change any configuration or code from libraries loaded here, you'll
   # need to restart spork for it take effect.
 
+  require 'coveralls'
+  Coveralls.wear!('rails')
+
   ENV["RAILS_ENV"] ||= 'test'
   require File.expand_path("../dummy/config/environment", __FILE__)
   require 'rspec/rails'
   require 'rspec/autorun'
   require 'capybara/rspec'
-
-  require 'coveralls'
-  Coveralls.wear!
 
   Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
