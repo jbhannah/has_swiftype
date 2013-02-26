@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.summary     = "Add Swiftype indexing to models in a Ruby on Rails application with a single method."
   s.description = "TODO: Description of HasSwiftype."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
   s.add_dependency "rails", "~> 3.2.12"
   s.add_dependency "swiftype", "0.0.4"
